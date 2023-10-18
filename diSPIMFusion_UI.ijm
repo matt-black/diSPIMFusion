@@ -20,8 +20,8 @@ filePSFB_bp = appPath + "data/PSFB_BP.tif";
 // Default parameters
 colorChoice="Single color";
 
-nameA = "SPIMA_";
-nameB = "SPIMB_";
+nameA = "SPIMA-";
+nameB = "SPIMB-";
 //pixel size of tiff images
 pixelSizeAx = 0.1625;
 pixelSizeAy = 0.1625;
@@ -32,7 +32,7 @@ pixelSizeBz = 1;
 
 regChoice = "All images dependently"; // registration mode: 
 									// "All images dependently", "All images independently",  "One image only", "No registration"
-rotChoice = "-90 deg by Y-axis"; // rotation angle for SPIMB: "No rotation", "90 deg by Y-axis",  "-90 deg by Y-axis"
+rotChoice = "90 deg by Y-axis"; // rotation angle for SPIMB: "No rotation", "90 deg by Y-axis",  "-90 deg by Y-axis"
 tmxChoice= "Default"; //flagInitialTmx = 0;
 FTOL = 0.0001;
 itLimit= 3000;

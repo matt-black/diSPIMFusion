@@ -20,7 +20,7 @@ macro "diSPIM_Preprocessing [p]"{
 //=================================================================
 // The default setup is for the MBL diSPIM by Feb. 2018
 
-imagingMode = "light sheet scanning"; // "light sheet scanning"; "stage scanning"
+imagingMode = "stage scanning"; // "light sheet scanning"; "stage scanning"
 
 colorChoice = "Single color";
 
@@ -45,8 +45,8 @@ theta = 45; //SPIMA tilt angle
 //56.7 degree = 0.9896 rab, sin(56.6) = 0.836; cos(56.7) = 0.549
 //stageStepA = 1.414;
 //stageStepB = stageStepA;
-d1 = -1; // shift direction: 1 or -1
-d2 = 1; // shift direction: 1 or -1
+d1 = 1; // shift direction: 1 or -1
+d2 = -1; // shift direction: 1 or -1
 
 //*******Axial Interpolation *********
 //****rotation and Interpolation is only enabled for ROI cropping: 
