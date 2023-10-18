@@ -188,11 +188,12 @@ Dialog.addCheckbox("Show GUP Device Information", dQuery);
 Dialog.addNumber("GPU Device #", deviceNum);
 
 //default for cuda app
-//Dialog.addMessage("\n");
+Dialog.addMessage("\n");
 //Dialog.addMessage("Default for CUDA app");
 //Dialog.addString("App location", appPath, 80);
-//Dialog.addString("PSFA", filePSFA, 80);
-//Dialog.addString("PSFB", filePSFB, 80);
+Dialog.addMessage("Point spread functions");
+Dialog.addString("PSFA", filePSFA, 50);
+Dialog.addString("PSFB", filePSFB, 50);
 //Dialog.setLocation(10,10);
 Dialog.show();
 
@@ -249,7 +250,7 @@ else if(rotChoice=="-90 deg by Y-axis"){
 tmxChoice = Dialog.getRadioButton();// 0, 1, 2;
 if(tmxChoice=="Default"){
 	flagInitialTmx = 0;
-	fileTmx = "Balabalabala";
+	fileTmx = "none";
 }
 else if(tmxChoice=="Customized"){
 	flagInitialTmx = 1; // 
@@ -257,7 +258,7 @@ else if(tmxChoice=="Customized"){
 }
 else if(tmxChoice=="2D registration"){
 	flagInitialTmx = 3;
-	fileTmx = "Balabalabala";
+	fileTmx = "none";
 }
 saveRegA = Dialog.getCheckbox(); //true: 1, false: 0
 saveRegB = Dialog.getCheckbox(); //true: 1, false: 0
@@ -284,8 +285,8 @@ deviceNum = Dialog.getNumber();
 
 //CUDA app
 //appPath = Dialog.getString();
-//filePSFA = Dialog.getString();
-//filePSFB = Dialog.getString();
+filePSFA = Dialog.getString();
+filePSFB = Dialog.getString();
 
 print("Parameters configuration done!!!\n\n");
 if(multiColor)
